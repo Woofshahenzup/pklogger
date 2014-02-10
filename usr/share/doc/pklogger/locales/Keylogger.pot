@@ -1,0 +1,77 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the kp package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: kp VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-02-09 18:18-0600\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: kp.sh:11
+msgid "Pklogger"
+msgstr ""
+
+#: kp.sh:13
+msgid "PuppyLinux Keylogger \\n \\n Must setup the keyboard first\\n and select a item,\\n then click in accept.\\n \\n  By josejp2424,nilsonmorales. "
+msgstr ""
+
+#: kp.sh:17
+msgid "By josejp2424,nilsonmorales"
+msgstr ""
+
+#: kp.sh:24
+msgid "    Set Keyboard layout."
+msgstr ""
+
+#: kp.sh:25
+msgid "    Enable Keylogger."
+msgstr ""
+
+#: kp.sh:26
+msgid "    Disable Keylogger."
+msgstr ""
+
+#: kp.sh:27
+msgid "    Check log."
+msgstr ""
+
+#: kp.sh:28
+msgid "    Clear log."
+msgstr ""
+
+#: kp.sh:36
+msgid ""
+"keylogger Enable - \n"
+"\t\tLog is stored in\n"
+"/var/log/kp/secret-keys.log "
+msgstr ""
+
+#: kp.sh:45
+msgid ""
+"keylogger Disable - \n"
+"\t\tLog is stored in \n"
+"/var/log/kp/secret-keys.log "
+msgstr ""
+
+#: kp-map.sh:12
+msgid "Keymaps  \\n \\n  Set the keyboard layout,\\n  then click in accept.\\n"
+msgstr ""
+
+#: kp-map.sh:13
+msgid "Keyboard layout selected"
+msgstr ""
+
+#: pinstall.sh:8
+msgid ""
+"Next time to run this \n"
+"app, type in terminal   kp  "
+msgstr ""

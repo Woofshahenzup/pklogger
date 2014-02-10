@@ -1,0 +1,63 @@
+#!/bin/sh
+#keylogger simple gui 
+#i18n josejp2424
+#l10n nilsonmorales
+#v0.2 blue color
+#v0.3 grey color 
+
+export TEXTDOMAIN=Keylogger
+export OUTPUT_CHARSET=UTF-8
+
+TITLE="$(gettext 'Pklogger')"
+VERSION="0.3"
+title1="$(gettext 'PuppyLinux Keylogger \n \n Must setup the keyboard first\n and select a item,\n then click in accept.\n \n  By josejp2424,nilsonmorales. ')"
+script1="geany /var/log/kp/secret-keys.log"
+script2="rm -f /var/log/kp/secret-keys.log"
+script3="touch /var/log/kp/secret-keys.log"
+TITLE2="$(gettext 'By josejp2424,nilsonmorales')"
+ICON="/usr/share/icons/hicolor/48x48/apps/espia.png"
+ICONAPP="/usr/share/icons/hicolor/48x48/apps/espia.png"
+B_OK="GTK_STOCK_OK"
+
+Xdialog --rc-file /root/.color.rc --title "$TITLE $VERSION" --wmclass keylogger --screen-center \
+        --icon "$ICON" --icon-name="$ICONAPP" --left --menubox \ " $title1 " 320 x 7 \
+ '1' "$(gettext '    Set Keyboard layout.')" \
+ '2' "$(gettext '    Enable Keylogger.')" \
+ '3' "$(gettext '    Disable Keylogger.')" \
+ '4' "$(gettext '    Check log.')" \
+ '5' "$(gettext '    Clear log.')" \
+2>/tmp/keylogger.tmp
+
+r=`tail -n 1 /tmp/keylogger.tmp`
+
+if [ "$r" == "2" ];then
+chmod +x /root/Startup/.pkl && /root/Startup/.pkl
+Xdialog --rc-file /root/.color.rc --title "keylogger" --icon '/usr/share/icons/espia.png' --msgbox "$(gettext 'keylogger Enable - 
+		Log is stored in
+/var/log/kp/secret-keys.log ')" 10 40 && /usr/bin/kp
+   exit ## Exit Script ##
+fi
+
+if [ "$r" == "3" ];then
+chmod -o /root/Startup/.pkl & logkeys -k &
+Xdialog --rc-file /root/.color.rc --title "keylogger" --icon '/usr/share/icons/espia.png' --msgbox "$(gettext 'keylogger Disable - 
+		Log is stored in 
+/var/log/kp/secret-keys.log ')" 10 40 && /usr/bin/kp
+   exit ## Exit Script ##
+fi
+
+if [ "$r" == "4" ];then
+$script1 && /usr/bin/kp
+   exit ## Exit Script ##
+fi
+
+if [ "$r" == "5" ];then
+$script2 && $script3 &&  /usr/bin/kp
+   exit ## Exit Script ##
+fi
+
+if [ "$r" == "1" ];then
+/usr/bin/kp-map && kp
+   exit ## Exit Script ##
+fi
+exit # END SCRIPT #

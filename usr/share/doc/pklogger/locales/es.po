@@ -1,0 +1,108 @@
+# Spanish translations for PACKAGE package.
+# Copyright (C) 2014 THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the kp package.
+# root <nilsonmorales@hotmail.com>, 2014.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: kp 0.3\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2014-02-09 18:18-0600\n"
+"PO-Revision-Date: 2014-02-09 18:24-0600\n"
+"Last-Translator: nilsonmorales <nilsonmorales@hotmail.com>\n"
+"Language-Team: Spanish\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: kp.sh:11
+msgid "Pklogger"
+msgstr "Pklogger"
+
+#: kp.sh:13
+msgid ""
+"PuppyLinux Keylogger \\n"
+" \\n"
+" Must setup the keyboard first\\n"
+" and select a item,\\n"
+" then click in accept.\\n"
+" \\n"
+"  By josejp2424,nilsonmorales. "
+msgstr ""
+"Keylogger en PuppyLinux \\n"
+" \\n"
+" Debe configurar el teclado primero\\n"
+" y seleccionar un item,\\n"
+" luego click en aceptar.\\n"
+" \\n"
+"  Por josejp2424,nilsonmorales. "
+
+#: kp.sh:17
+msgid "By josejp2424,nilsonmorales"
+msgstr "Por josejp2424,nilsonmorales"
+
+#: kp.sh:24
+msgid "    Set Keyboard layout."
+msgstr "   Configure distrib. del teclado."
+
+#: kp.sh:25
+msgid "    Enable Keylogger."
+msgstr "    Activar Keylogger."
+
+#: kp.sh:26
+msgid "    Disable Keylogger."
+msgstr "    Desactivar Keylogger"
+
+#: kp.sh:27
+msgid "    Check log."
+msgstr "    Ver registro."
+
+#: kp.sh:28
+msgid "    Clear log."
+msgstr "    Borrar registro."
+
+#: kp.sh:36
+msgid ""
+"keylogger Enable - \n"
+"\t\tLog is stored in\n"
+"/var/log/kp/secret-keys.log "
+msgstr ""
+"keylogger Activado - \n"
+"\t\tEl registro se guarda en\n"
+"/var/log/kp/secret-keys.log "
+
+#: kp.sh:45
+msgid ""
+"keylogger Disable - \n"
+"\t\tLog is stored in \n"
+"/var/log/kp/secret-keys.log "
+msgstr ""
+"keylogger Desactivado - \n"
+"\t\tEl registro se guarda en \n"
+"/var/log/kp/secret-keys.log "
+
+#: kp-map.sh:12
+msgid ""
+"Keymaps  \\n"
+" \\n"
+"  Set the keyboard layout,\\n"
+"  then click in accept.\\n"
+msgstr ""
+"Keymaps  \\n"
+" \\n"
+"  Configure distrib. del teclado,\\n"
+"  luego click en aceptar.\\n"
+
+#: kp-map.sh:13
+msgid "Keyboard layout selected"
+msgstr "Distribución de teclado seleccionada"
+
+#: pinstall.sh:8
+msgid ""
+"Next time to run this \n"
+"app, type in terminal   kp  "
+msgstr ""
+"La próxima vez para correr esta \n"
+"aplicación, escriba en terminal   kp  "
+
