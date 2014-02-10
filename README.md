@@ -21,12 +21,17 @@ se escribe en un archivo oculto.
 
 Forma de Uso
 =============
-Configura el teclado para tu idioma y elige un item 
-Activar
-Desactivar
-Ver registro
-Borrar registro
+- Configura el teclado para tu idioma y elige un item 
+- Activar
+- Desactivar
+- Ver registro
+- Borrar registro
 
 Sin entrada en el menu solo se puede llamar por consola 
 con el comando pk
+
+[Reportar fallos]
+(https://github.com/Woofshahenzup/pklogger/issues)
+[Comentarios]
+(https://github.com/Woofshahenzup/pklogger/issues?labels=Comments&page=1&state=open)
 
