@@ -17,7 +17,7 @@ por Jose Peralta josejp2424, guarda el registro de lo que
 se escribe en un archivo oculto.
 
 [pklogger-0.3.pet]
-(http://ubuntuone.com/0E5O8poDf3vxDSd5AQZ3JY)
+(https://copy.com/3FqBmMGz4PoZ)
 
 Forma de Uso
 =============
