@@ -16,6 +16,12 @@ Interfaz para logkeys simple escrita en gtkdialog
 por Jose Peralta josejp2424, guarda el registro de lo que
 se escribe en un archivo oculto.
 
+#### Descarga
+
+Desde terminal: 
+
+`wget --no-check-certificate https://copy.com/3FqBmMGz4PoZ/pklogger-0.3.pet`
+
 [pklogger-0.3.pet]
 (https://copy.com/3FqBmMGz4PoZ)
 
