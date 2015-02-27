@@ -24,6 +24,7 @@ Desde terminal:
 
 [pklogger-0.3.pet]
 (https://copy.com/3FqBmMGz4PoZ)
+MD5SUM dffb445cf7a1eee655809eb70ba978d8
 
 Forma de Uso
 =============
@@ -34,7 +35,7 @@ Forma de Uso
 - Borrar registro
 
 Sin entrada en el menu solo se puede llamar por consola 
-con el comando pk
+con el comando kp
 
 [Reportar fallos]
 (https://github.com/Woofshahenzup/pklogger/issues)
