@@ -20,11 +20,11 @@ se escribe en un archivo oculto.
 
 Desde terminal: 
 
-`wget --no-check-certificate http://repo.gentoo-es.com/PuppyLinux-repositorios/Pupjibaro/3.2.48/pklogger-0.3.pet`
+`wget --no-check-certificate http://repo.gentoo-es.com/PuppyLinux-repositorios/Pupjibaro/3.2.48/pklogger-0.4.pet`
 
 [pklogger-0.3.pet]
-(http://repo.gentoo-es.com/PuppyLinux-repositorios/Pupjibaro/3.2.48/pklogger-0.3.pet)
-MD5SUM dffb445cf7a1eee655809eb70ba978d8
+(http://repo.gentoo-es.com/PuppyLinux-repositorios/Pupjibaro/3.2.48/pklogger-0.4.pet)
+MD5SUM 01dd30d289ab93d231e4772a865929cc
 
 Forma de Uso
 =============
