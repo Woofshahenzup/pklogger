@@ -4,13 +4,14 @@
 #l10n nilsonmorales
 #v0.2 blue color
 #v0.3 grey color 
+#v0.4 Geoffrey fix added 11032016, orange color 
 
 export TEXTDOMAIN=Keylogger
 export OUTPUT_CHARSET=UTF-8
 
 TITLE="$(gettext 'Pklogger')"
-VERSION="0.3"
-title1="$(gettext 'PuppyLinux Keylogger \n \n Must setup the keyboard first\n and select a item,\n then click in accept.\n \n  By josejp2424,nilsonmorales. ')"
+VERSION="0.4"
+title1="$(gettext 'PuppyLinux Keylogger \n \n Must setup the keyboard first\n and select a item,\n then click in accept.\n \n  By josejp2424 y nilsonmorales. ')"
 script1="geany /var/log/kp/secret-keys.log"
 script2="rm -f /var/log/kp/secret-keys.log"
 script3="touch /var/log/kp/secret-keys.log"

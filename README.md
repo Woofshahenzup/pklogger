@@ -20,10 +20,10 @@ se escribe en un archivo oculto.
 
 Desde terminal: 
 
-`wget --no-check-certificate https://copy.com/3FqBmMGz4PoZ/pklogger-0.3.pet`
+`wget --no-check-certificate http://repo.gentoo-es.com/PuppyLinux-repositorios/Pupjibaro/3.2.48/pklogger-0.3.pet`
 
 [pklogger-0.3.pet]
-(https://copy.com/3FqBmMGz4PoZ)
+(http://repo.gentoo-es.com/PuppyLinux-repositorios/Pupjibaro/3.2.48/pklogger-0.3.pet)
 MD5SUM dffb445cf7a1eee655809eb70ba978d8
 
 Forma de Uso

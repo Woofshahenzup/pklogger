@@ -1,5 +1,5 @@
-style 'grey_background' {
-bg[NORMAL] = "#9F9F9F"
+style 'orange_background' {
+bg[NORMAL] = "#DF843A"
 fg[NORMAL] = "#000000"
 }
-widget '*' style 'grey_background'
+widget '*' style 'orange_background'
