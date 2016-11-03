@@ -22,7 +22,7 @@ Desde terminal:
 
 `wget --no-check-certificate http://repo.gentoo-es.com/PuppyLinux-repositorios/Pupjibaro/3.2.48/pklogger-0.4.pet`
 
-[pklogger-0.3.pet]
+[pklogger-0.4.pet]
 (http://repo.gentoo-es.com/PuppyLinux-repositorios/Pupjibaro/3.2.48/pklogger-0.4.pet)
 MD5SUM 01dd30d289ab93d231e4772a865929cc
 
